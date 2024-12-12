@@ -51,48 +51,44 @@ body {
   font-size: 1.25rem;
 }
 
-.product_card {
-  border: 3px solid var(--main-bg-color); /* Add a border */
-  border-radius: 10px; /* Round the corners */
-  padding: 10px;
-  width: 250px; /* Adjust the width as needed */
-  font-family: var(--font-family2);
-  text-align:start
+.product-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.product-card {
+  border: 2px solid var(--main-bg-color);
+  padding: 0.5rem;
+  text-align: center;
+  background-color: var(--secondary-bg-color);
+  border-radius: 0.5rem;
 }
 
 .product-image {
-  width: 100%; /* Make the image fill the card width */
-  border-radius: 5px; /* Round the image corners */
-  margin-bottom: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.25rem;
 }
 
-.product-name {
-  color: var(--font-color); /* Set the text color to white */
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-.producto__precio__boton{
+.precio__delete {
   display: flex;
   justify-content: space-between;
 }
 
-.product-price {
-  color: var(--font-color); /* Set the price color to white */
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.delete-button {
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  cursor: pointer;
+.product-name {
+  text-align: start;
+  margin: 0.5rem 0;
 }
 
 .delete-icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  background: none;
+  border: none;
+  color: var(--main-bg-color);
+  cursor: pointer;
 }
 
 .add-product .product-form {
@@ -130,4 +126,56 @@ body {
   padding: 1rem;
   background-color: var(--main-bg-color);
   color: var(--secondary-bg-color);
+}
+
+/* Responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .products, .add-product {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .header {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .main {
+    padding: 0.5rem;
+  }
+
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .product-image {
+    height: 150px;
+  }
+
+  .btn-submit, .btn-reset {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
 }
