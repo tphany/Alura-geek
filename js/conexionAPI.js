@@ -1,23 +1,13 @@
-async function listarProductos() {
-  try {
-    const response = await fetch("http://localhost:3000");
-    const data = await response.json();
+async function mostrarProductos() {
+  const conexion = await fetch("http://localhost:3001/videos");
 
-    // Do something with the data, e.g., update the DOM
-    const productList = document.getElementById('productList');
-    productList.innerHTML = '';
+  // Esperar la conversión a JSON
+  const conexionConvertida = await conexion.json();
 
-    data.forEach(product => {
-      const li = document.createElement('li');
-      li.textContent = product.name; // Assuming 'name' is a property of the product object
-      productList.appendChild(li);
-    });
-  } catch (error) {
-    console.error("Error al buscar el producto:", error.message);
-    // Display an error message to the user
-    const errorMessage = document.getElementById('errorMessage');
-    errorMessage.textContent = "Se ha producido un error al buscar el producto.";
-  }
+  return conexionConvertida;
 }
 
-listarProductos();
+// Exportar las funciones
+export const conexionAPI = {
+  mostrarProductos,
+};
