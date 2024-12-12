@@ -51,54 +51,48 @@ body {
   font-size: 1.25rem;
 }
 
-.product-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem; 
+.product_card {
+  border: 3px solid var(--main-bg-color); /* Add a border */
+  border-radius: 10px; /* Round the corners */
+  padding: 10px;
+  width: 250px; /* Adjust the width as needed */
+  font-family: var(--font-family2);
+  text-align:start
 }
-
-.product-card {
-  max-width: 20%;
-  min-width: 200px;
-  border: 2px solid var(--main-bg-color);
-  padding: 1.6rem;
-  text-align: center;
-  background-color: var(--secondary-bg-color);
-  border-radius: 0.5rem;
-}
-
 
 .product-image {
-  width: 100%; 
-  height: 200px; 
-  object-fit: cover;
-  border-radius: 0.25rem; 
-}
-
-
-.producto__precio__boton{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  width: 100%; /* Make the image fill the card width */
+  border-radius: 5px; /* Round the image corners */
+  margin-bottom: 10px;
 }
 
 .product-name {
+  color: var(--font-color); /* Set the text color to white */
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.producto__precio__boton{
   display: flex;
-  text-align: justify;
-  margin: 0.5rem 0;
+  justify-content: space-between;
+}
+
+.product-price {
+  color: var(--font-color); /* Set the price color to white */
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .delete-button {
-  background: none;
+  background-color: transparent;
   border: none;
-  padding: 0;
+  color: #fff;
   cursor: pointer;
 }
 
 .delete-icon {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 
 .add-product .product-form {

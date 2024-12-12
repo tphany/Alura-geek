@@ -20,16 +20,4 @@ async function mostrarProductos() {
         </li>
       `;
 
-      const productCard = document.createElement('li');
-      productCard.classList.add('product-card');
-      productCard.innerHTML = productCardTemplate;
-
-      productList.appendChild(productCard);
-    });
-  } catch (error) {
-    console.error("Error al obtener los productos:", error.message);
-    // Mostrar un mensaje de error al usuario (opcional)
-  }
-}
-
 export default mostrarProductos;
