@@ -1,0 +1,77 @@
+{
+    "Articulos": [
+      {
+        "id": 1,
+        "nombre": "Audífono de Gato Bluetooth con Función MP3 y Micrófono",
+        "descripcion": "Audífono de Gato Bluetooth",
+        "precio": 14990,
+        "moneda": "CLP",
+        "imagen": "images/audifonos-gatito.jpeg"
+      },
+      {
+        "id": 2,
+        "nombre": "Figura Jinx La Bala Perdida Original League Of Legends 28cm",
+        "descripcion": "Figura Jinx League Of Legends",
+        "precio": 36990,
+        "moneda": "CLP",
+        "imagen": "images/lol2.jpg"
+      },
+      {
+        "id": 3,
+        "nombre": "Dragon Ball Z Blue-ray Disc Episodios 271 a 291",
+        "descripcion": "Dragon Ball Z Blue-ray",
+        "precio": 36990,
+        "moneda": "CLP",
+        "imagen": "images/dbz1.jpg"
+      },
+      {
+        "id": 4,
+        "nombre": "Teclado mecánico switch azul",
+        "descripcion": "Teclado mecánico",
+        "precio": 22990,
+        "moneda": "CLP",
+        "imagen": "images/teclado.jpeg"
+      },
+      {
+        "id": 5,
+        "nombre": "Silla gamer reclinable y ajustable",
+        "descripcion": "Silla gamer",
+        "precio": 120990,
+        "moneda": "CLP",
+        "imagen": "images/silla gamer.jpeg"
+      },
+      {
+        "id": 6,
+        "nombre": "Peluches Skzoo De Stray Kids Variedades K-pop",
+        "descripcion": "Peluches Skzoo De Stray Kids",
+        "precio": 8990,
+        "moneda": "CLP",
+        "imagen": "images/wolfchan.jpg"
+      },
+      {
+        "id": 7,
+        "nombre": "Consola Game Boy Sup con 400 Juegos Recargable + 1 Control",
+        "descripcion": "Consola Game Boy Sup",
+        "precio": 19990,
+        "moneda": "CLP",
+        "imagen": "images/gameboy.jpg"
+      },
+      {
+        "id": 8,
+        "nombre": "Control Inalámbrico Microsoft Xbox Series S Azul",
+        "descripcion": "Control inalámbrico Xbox",
+        "precio": 74990,
+        "moneda": "CLP",
+        "imagen": "images/control xbox.jpg"
+      },
+      {
+        "id": 9,
+        "nombre": "Deadpool & Wolverine con Babypool Funko Pop! Vinyl Figure #1403 and Buddy",
+        "descripcion": "Figura Funko Pop de Deadpool & Wolverine",
+        "precio": 17990,
+        "moneda": "CLP",
+        "imagen": "images/pop wolverine.jpg"
+      }
+    ]
+  }
+  
