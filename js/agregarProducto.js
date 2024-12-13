@@ -1,26 +1,19 @@
 import { conexionAPI } from "/js/conexionAPI.js";
 
-const lista = document.querySelector("[data-lista]");/*con esto el ul del html queda ingresado en js*/
+const formulario = document.querySelector("[data-formulario]")
 
-function crearCard(nombre,descripcion,precio,imagen) {
-    const producto = document.createElement("li");
-    producto.className = "product-card";/*con la clase de la lista*/
-    producto.innerHTML = `
-        <img src="${imagen}" alt="${descripcion}" class="product-image">
-        <p class="product-name">${nombre}</p>
-        <div class="precio__delete">
-            <p class="product-price"><b>$${precio}CLP</b></p>
-            <button class="delete-button">
-                <img src="images/delete.png" alt="Eliminar" class="delete-icon">
-            </button>
-        </div>`;
-    return producto;
-}
+async function agregarProducto(evento){
+    evento.preventDefault();
 
-async function agregarProducto() {
-    const listaAPI = await conexionAPI.agregarProducto(); // Obtener datos desde la API
+    const nombre = document.querySelector("[data-nombre]").value;
+    const descripcion = document.querySelector("[data-descripcion]").value;
+    const precio = document.querySelector("[data-precio]").value;
+    const url = document.querySelector("[data-imagen]").value;
+
+    await conexionAPI.agregarProducto(nombre,descripcion,precio,url);
+
+    window.location.href = "index.html";
     
-    listaAPI.forEach(producto=>lista.appendChild(crearCard(producto.nombre,producto.descripcion,producto.precio,producto.imagen)))
 }
 
-agregarProducto();
+formulario.addEventListener("submit",evento => agregarProducto(evento)) /*este evento realiza la acción de enviar y agregar un nuevo producto*/

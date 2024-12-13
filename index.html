@@ -13,26 +13,29 @@
   </header>
 
   <main class="main">
+
     <section class="products">
       <h2 class="section-title">Mis Productos:</h2>
      
       <ul class="product-list" data-lista>
 
-      
       </ul>
     </section>
 
     <section class="add-product">
       <h2 class="section-title">Agregar Producto:</h2>
-      <form class="product-form">
-        <input type="text" placeholder="Nombre..." class="input-text">
-        <input type="text" placeholder="Precio..." class="input-text">
-        <input type="text" placeholder="Imagen..." class="input-text">
+
+      <form class="product-form" data-formulario>
+        <input type="text" placeholder="Nombre" class="input-text" data-nombre>
+        <input type="text" placeholder="Descripción" class="input-text" data-descripcion>
+        <input type="text" placeholder="Precio" class="input-text" data-precio>
+        <input type="text" placeholder="Link o url del producto" class="input-text" data-imagen>
         <div class="form-buttons">
           <button type="submit" class="btn-submit">Enviar</button>
           <button type="reset" class="btn-reset">Limpiar</button>
         </div>
       </form>
+
     </section>
   </main>
 
@@ -41,6 +44,7 @@
     <p>ALURA LATAM - 2024</p>
   </footer>
 
+  <script src="js/mostrarProducto.js" type="module"></script> 
   <script src="js/agregarProducto.js" type="module"></script> 
 </body>
 </html>
